@@ -1,0 +1,20 @@
+{
+    "recommendations": [
+      //! Essentials
+      "visualstudiotoolsforunity.vstuc",  // Unity
+      "ms-dotnettools.csdevkit",  // C# Dev Kit by Microsoft
+      "csharpier.csharpier-vscode", // Code formatting on save.
+      "adpyke.codesnap", // Code screenshots.
+
+      //? Optional
+      "aaron-bond.better-comments", // Syntax highlighting but for comments
+      "usernamehw.errorlens", // Your errors should be highlighted in the text editor colocated with your code.
+      "bierner.github-markdown-preview", // Render markdown files like GitHub.
+      "christian-kohler.path-intellisense", // Autocompletion for file paths.
+
+      //? Themes
+      "sainnhe.gruvbox-material",
+      "PKief.material-icon-theme",
+      "miguelsolorio.fluent-icons"
+    ]
+}

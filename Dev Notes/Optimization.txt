@@ -1,0 +1,15 @@
+Based on the guide we used, I think this only works for 2D games so keep that in mind
+
+
+Number of enemies/objects spawned in would make the game laggy. 
+1. go to project settings
+2. go to time
+3. set Fixed Timestep to 0.04
+
+Note: Fixed Timestep deals with the calculation time for the physics in the game, the higher the value, the more imprecise the game would be. So don't change the value too much just to be safe.
+
+The code GetComponent takes some resources so if possible find a way to use an alternative code solution for this.
+
+also if possible make your code have fewer lines, because if the program reads the code line by line, it would be slowed down.
+
+

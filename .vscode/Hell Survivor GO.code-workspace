@@ -1,0 +1,24 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "[json]": {
+            "editor.defaultFormatter": "vscode.json-language-features",
+            // "editor.quickSuggestions": {
+            //     "strings": true
+            // },
+            // "editor.suggest.insertMode": "replace"
+        },
+        "[jsonc]": {
+            "editor.defaultFormatter": "vscode.json-language-features",
+        },
+        "dotnet.defaultSolution": "Survival 2D.sln",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "always",
+            "source.fixAll.csharpier": "always",
+        }
+    }
+}

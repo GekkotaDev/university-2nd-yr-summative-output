@@ -1,0 +1,57 @@
+// makes a field where you can limit the amount of enemies spawned
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemiesManager : MonoBehaviour
+{
+    [SerializeField] GameObject enemy;
+    [SerializeField] Vector2 spawnArea;
+    [SerializeField] float spawnTimer;
+    [SerializeField] GameObject player; // don't forget to put the player's prefab into this field by dragging the PlayerCharacter into it
+    [SerializeField] int maxEnemies = 10; // The maximum number of enemies to spawn
+    float timer;
+    private int currentEnemyCount = 0; // Keeps track of how many enemies are currently spawned
+
+    private void Update()
+    {
+        timer -= Time.deltaTime;
+        if(timer < 0f && currentEnemyCount < maxEnemies) // Only spawn if the enemy count is less than the max limit
+        {
+            SpawnEnemy();
+            timer = spawnTimer;
+        }
+    }
+
+    private void SpawnEnemy()
+    {
+        Vector3 position = GenerateRandomPosition(); // sets the location of the spawner
+        position += player.transform.position; // sets the position of the spawned enemies around towards the location of the player
+        GameObject newEnemy = Instantiate(enemy);
+        newEnemy.transform.position = position;
+        newEnemy.GetComponent<Enemy>().SetTarget(player);
+        newEnemy.transform.parent = transform; // puts the spawned enemies under a spawner's gameobject so that the heirarchy isn't messy
+
+        currentEnemyCount++; // Increase the count of spawned enemies
+    }
+
+    private Vector3 GenerateRandomPosition()
+    {
+        Vector3 position = new Vector3();
+        float f = UnityEngine.Random.value > 0.5f ? -1f : 1f;
+        if(UnityEngine.Random.value > 0.5f)
+        {
+            position.x = UnityEngine.Random.Range(-spawnArea.x, spawnArea.x);
+            position.y = spawnArea.y * f;
+        }
+        else
+        {
+            position.y = UnityEngine.Random.Range(-spawnArea.y, spawnArea.y);
+            position.x = spawnArea.x * f;
+        }
+        
+        position.z = 0;
+
+        return position;
+    }
+}

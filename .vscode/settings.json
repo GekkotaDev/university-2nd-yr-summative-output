@@ -1,0 +1,67 @@
+{
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.vs": true,
+        "**/.gitmodules": true,
+        /*
+         ! You don't need to hide the game assets - and I recommend against it.
+
+         ! That is gonna make it more difficult for you to understand in your
+         ! game scripts where a particular file is coming from. If it's some-
+         ! thing that's meant to be hidden then yes go hide it.
+         */
+        // "**/.vsconfig": true,
+        // "**/*.booproj": true,
+        // "**/*.pidb": true,
+        // "**/*.suo": true,
+        // "**/*.user": true,
+        // "**/*.userprefs": true,
+        // "**/*.unityproj": true,
+        "**/*.dll": true,
+        "**/*.exe": true,
+        // "**/*.pdf": true,
+        // "**/*.mid": true,
+        // "**/*.midi": true,
+        // "**/*.wav": true,
+        // "**/*.gif": true,
+        // "**/*.ico": true,
+        // "**/*.jpg": true,
+        // "**/*.jpeg": true,
+        // "**/*.png": true,
+        // "**/*.psd": true,
+        // "**/*.tga": true,
+        // "**/*.tif": true,
+        // "**/*.tiff": true,
+        // "**/*.3ds": true,
+        // "**/*.3DS": true,
+        // "**/*.fbx": true,
+        // "**/*.FBX": true,
+        // "**/*.lxo": true,
+        // "**/*.LXO": true,
+        // "**/*.ma": true,
+        // "**/*.MA": true,
+        // "**/*.obj": true,
+        // "**/*.OBJ": true,
+        // "**/*.asset": true,
+        // "**/*.cubemap": true,
+        // "**/*.flare": true,
+        // "**/*.mat": true,
+        // "**/*.meta": true,
+        // "**/*.prefab": true,
+        // "**/*.unity": true,
+        "build/": true,
+        "Build/": true,
+        "Library/": true,
+        "library/": true,
+        "obj/": true,
+        "Obj/": true,
+        // "Logs/": true,
+        // "logs/": true,
+        // "ProjectSettings/": true,
+        // "UserSettings/": true,
+        "temp/": true,
+        "Temp/": true
+    },
+    "dotnet.defaultSolution": "Survival 2D.sln"
+}
