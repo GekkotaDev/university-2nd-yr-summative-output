@@ -39,3 +39,29 @@ Actions to automate this.
   to a new Scene a la boss room?
 - C# Dev Kit + Unity extension so far so good. I'm way too used to VS Code to
   give it up now.
+- The fireballs don't despawn. *thousand yard stare*
+
+## May 14 `v0.4.0`
+
+- Added guide for controls
+- Music! (M.U.L.E \[Labyrinth Mix\] by Vomic)
+- Music toggle.
+- A game over screen.
+- Experience based unlock.
+
+### NOTES
+
+- I will have to be honest here even if it's a bit too much. On top of me not
+  having any experience in Unity, the lack of organization in the hierarchy has
+  made it more difficult to navigate the project and implement features. I can
+  not make any guarantees that every feature wanted will be in the final game
+  so I'll have to throw in the towel and make the scope smaller. Suggestions:
+  - [Dependency Injection](https://developer.android.com/training/dependency-injection).
+    Bonus points if you study related Design Patterns such as the Strategy
+    Pattern (related to `interface`s). This enables code to not be tightly
+    coupled in a way where any changes should minimize propagation of
+    side-effects and makes for highly testable and easily modifiable code.
+  - [Observer Pattern](https://refactoring.guru/design-patterns/observer) and/or
+    event-driven programming.
+  - I apologize in advance if this is a bit too harsh. Just know this is out of
+    genuine concern.
