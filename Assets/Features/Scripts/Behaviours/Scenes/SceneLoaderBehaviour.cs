@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameStartBehaviourScript : MonoBehaviour
+public class SceneLoaderBehaviourScript : MonoBehaviour
 {
+    // public string scene;
+
     // Start is called before the first frame update
     // void Start() { }
 
     // Update is called once per frame
     // void Update() { }
 
-    public void startGame()
+    public void StartGame(string scene)
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(scene);
     }
 }

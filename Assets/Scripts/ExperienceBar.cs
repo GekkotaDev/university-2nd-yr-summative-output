@@ -5,8 +5,11 @@ using UnityEngine.UI;
 
 public class ExperienceBar : MonoBehaviour
 {
-    [SerializeField] Slider slider; // drag the slider component into this field
-    [SerializeField] TMPro.TextMeshProUGUI levelText;
+    [SerializeField]
+    Slider slider; // drag the slider component into this field
+
+    [SerializeField]
+    TMPro.TextMeshProUGUI levelText;
 
     public void UpdateExperienceSlider(int current, int target)
     {
